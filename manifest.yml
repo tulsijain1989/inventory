@@ -1,0 +1,11 @@
+---
+applications:
+  - name: billing
+    buildpack: java_buildpack
+    path: target/billing-1.jar
+    memory: 512M
+    services:
+      - cf-spring-db
+env:
+   db_service_name: cf-spring-db
+  
